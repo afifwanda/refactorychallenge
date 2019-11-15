@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+      Odd & Even Number
+    </title>
+</head>
+
+<h2>Odd & Even Number</h2>
+<button onclick = "num()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function num(){
+    function num(){
+  var result = "";
+  for (i = 1; i <= 1000 ; i++){
+    if (i %100 == 0){
+        document.write (i + ". Kelipatan 100" + '<br>');
+    }else if (i %2 == 0 && i %5 == 0){
+        document.write (i + ". Genap Kelipatan 5" + '<br>');
+    }else if (i %2 != 0 && i%5 == 0){
+        document.write (i + ". Ganjil Kelipatan 5" + '<br>');
+    }else if (i %2 == 0){
+        document.write (i + ". Genap" + '<br>');
+    }else{
+        document.write (i + ". Ganjil" + '<br>');
+    }
+  }
+return result
+}
+  document.getElementById("test").innerHTML = num();
+}
+</script>
+</body>
+</html>

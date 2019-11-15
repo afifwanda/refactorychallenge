@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+      Movie Rating Prompt() Method
+    </title>
+</head>
+
+<h2>Movie Rating Prompt() Method</h2>
+<button onclick = "rating ()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function rating(){
+  var result;
+  var age = prompt ("input :", "Umur");
+  if (age >= 21){
+   result = "DEWASA";
+  }
+  else if  (age >= 13 && age <= 20){
+    result = "REMAJA" ;
+  }
+  else if  (age >= 9 && age <= 19){
+    result = "BIMBINGAN ORANG TUA" ;
+  }
+  else{
+    result = "SEMUA UMUR";
+  }
+  document.getElementById("test").innerHTML = result;
+}
+</script>
+</body>
+</html>

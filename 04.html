@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+    Leap Year Prompt() Method
+    </title>
+</head>
+
+<h2>Leap Year Prompt() Method</h2>
+<button onclick = "test()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function test(){
+  var result;
+  var year = prompt ("input :", "Masukan Tahun");
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+   result = "Tahun : " + "Kabisat";
+  }
+  else{
+    result = "Tahun : " + "Bukan Kabisat";
+  }
+  document.getElementById("test").innerHTML = result;
+}
+</script>
+</body>
+</html>

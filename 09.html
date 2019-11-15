@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+        Sentence Reverse Prompt() Method
+    </title>
+</head>
+
+<h2>Sentence Reverse Prompt() Method</h2>
+<button onclick = "long()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function long(){
+  var sentence = prompt ("masukan kalimat :", "saya ingin makan nasi goreng");
+    document.getElementById("test").innerHTML = "output : " + sentence.split(' ').reverse().join(' ');
+  }
+</script>
+</body>
+</html>

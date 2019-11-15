@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+        Mirroring Words
+    </title>
+</head>
+
+<h2>Mirroring Words</h2>
+<button onclick = "mirror()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+    function mirror(){
+  var mirr = prompt("Input = ","");
+  var ror = mirr.split("").reverse().join("");
+  var mirror = mirr.concat(ror)
+  return mirror;
+}
+document.getElementById("test").innerHTML = mirror();
+</script>
+</body>
+</html>

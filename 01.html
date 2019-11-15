@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+    Character Length Prompt() Method
+    </title>
+</head>
+
+<h2>Character Length Prompt() Method</h2>
+<button onclick = "long()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function long(){
+  var name = prompt ("input :", "input the character");
+  if (name != null){
+    document.getElementById("test").innerHTML = "output : " + name.length;
+  }
+}
+</script>
+</body>
+</html>

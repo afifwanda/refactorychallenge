@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+    Grade Prompt() Method
+    </title>
+</head>
+
+<h2>Grade Prompt() Method</h2>
+<button onclick = "grade()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function grade(){
+  var result;
+  var score = prompt ("input :", "Nilai");
+  if (score >= 90){
+   result = "nilai : " + "A";
+  }
+  else if  (score >= 80 && score <= 89){
+    result = "nilai : " + "B";
+  }
+  else if  (score >= 70 && score <= 79){
+    result = "nilai : " + "C";
+  }
+  else if  (score >= 60 && score <= 69){
+    result = "nilai : " + "D";
+  }
+  else{
+    result = "nilai : " + "E";
+  }
+  document.getElementById("test").innerHTML = result;
+}
+</script>
+</body>
+</html>

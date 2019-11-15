@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+    Array to String
+    </title>
+</head>
+
+<h2>Array to String</h2>
+<button onclick = "newString()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+    var fruits = [
+  {name: 'Pepaya', price: 3000},
+  {name: 'Jagung', price: 2000},
+  {name: 'Mengkudu', price: 4000},
+  {name: 'Kiwi', price: 6000},
+]
+    function newString(){
+
+var newFruit = Object.fromEntries(fruits.map(item => [item.name, item.price]));
+return newFruit;
+    }
+document.getElementById("test").innerHTML = newString();
+</script>
+</body>
+</html>

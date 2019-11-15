@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<head>
+    <title>
+      Loop Range Prompt() Method
+    </title>
+</head>
+
+<h2>Loop Range Prompt() Method</h2>
+<button onclick = "range ()">
+click
+</button>
+
+<p id = "test"></p>
+
+<script>
+function range(){
+  var result = "";
+  var Start = prompt("masukan angka pertama", "")
+  var End = prompt ("masukan angka akhir","")
+  for (var i = parseInt(Start) ; i <= parseInt(End) ; i++){
+      result += i + ",";
+      }
+      return result.slice(0, -1);
+  }
+  document.getElementById("test").innerHTML = range();
+
+</script>
+</body>
+</html>
